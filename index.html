@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="app glass">
+  <h1>Assignment Tracker</h1>
+  <p class="subtitle">Organize your work. Dominate your deadlines.</p>
+
+  <div class="input-group">
+    <input type="text" id="title" placeholder="Assignment name">
+    <input type="date" id="date">
+    <select id="priority">
+      <option value="High">🔥 High Priority</option>
+      <option value="Medium">⚡ Medium Priority</option>
+      <option value="Low">🌱 Low Priority</option>
+    </select>
+    <button onclick="addAssignment()">Add Assignment</button>
+  </div>
+
+  <ul id="list"></ul>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
